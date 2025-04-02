@@ -1,0 +1,11 @@
+1
+110
+G
+minor
+jazz
+Piano, Contrabass, Saxophone, Drums
+75
+0.7
+0.8
+y
+ai_composition.mid

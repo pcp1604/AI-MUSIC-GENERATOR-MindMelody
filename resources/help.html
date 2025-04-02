@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Composer - Help</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 25px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .note {
+            background-color: #ffffcc;
+            padding: 10px;
+            border-left: 4px solid #ffcc00;
+            margin: 15px 0;
+        }
+        .keyboard-shortcut {
+            display: inline-block;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Music Composer Help Guide</h1>
+    
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to AI Music Composer, an intuitive application for creating AI-generated music compositions. This guide will help you understand the features and functionality of the application.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Getting Started</h2>
+        <p>The AI Music Composer interface is divided into several panels:</p>
+        <ul>
+            <li><strong>Composer Panel:</strong> Set music parameters and generate compositions</li>
+            <li><strong>Editor Panel:</strong> Edit and modify generated compositions</li>
+            <li><strong>Playback Panel:</strong> Play, pause, and control audio playback</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Composition Parameters</h2>
+        <p>Control various aspects of your composition with these parameters:</p>
+        
+        <h3>Basic Parameters</h3>
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Tempo</td>
+                <td>Speed of the music in beats per minute (BPM)</td>
+            </tr>
+            <tr>
+                <td>Key</td>
+                <td>The tonal center of the composition (e.g., C, F#)</td>
+            </tr>
+            <tr>
+                <td>Mode</td>
+                <td>Major or minor scale structure</td>
+            </tr>
+            <tr>
+                <td>Style</td>
+                <td>Musical genre (Classical, Jazz, Pop, Rock, Electronic)</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>Length of the composition in seconds</td>
+            </tr>
+        </table>
+        
+        <h3>Advanced Parameters</h3>
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Chord Complexity</td>
+                <td>Controls how complex the chord voicings will be</td>
+            </tr>
+            <tr>
+                <td>Rhythm Variation</td>
+                <td>Controls the amount of rhythmic variety</td>
+            </tr>
+        </table>
+        
+        <h3>Instruments</h3>
+        <p>Select one or more instruments from the available list. Each style has typical instruments that work well together.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Generating Music</h2>
+        <p>To create a new composition:</p>
+        <ol>
+            <li>Set the desired parameters using the controls in the Composer Panel</li>
+            <li>Click the "Generate Composition" button</li>
+            <li>Wait while the AI creates your music</li>
+            <li>The generated composition will appear in the Editor Panel</li>
+        </ol>
+        
+        <div class="note">
+            <p><strong>Tip:</strong> Not sure where to start? Use the "Suggest Parameters" button to let the AI recommend settings based on musical theory and common practices.</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Editing Music</h2>
+        <p>After generating a composition, you can edit it in the Editor Panel:</p>
+        <ul>
+            <li>Rearrange instrument parts using the "Move Up" and "Move Down" buttons</li>
+            <li>Add new parts with the "Add Part" button</li>
+            <li>Remove parts with the "Remove Part" button</li>
+            <li>View the score in various formats (Score View, Piano Roll, Text View)</li>
+        </ul>
+        
+        <p><strong>Note:</strong> In this version, detailed note-level editing is limited. Future versions will include more comprehensive editing capabilities.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Playback Controls</h2>
+        <p>Control playback of your composition with these features:</p>
+        <ul>
+            <li>Play, pause, and stop buttons to control playback</li>
+            <li>Progress bar showing the current playback position</li>
+            <li>Volume control slider</li>
+            <li>Playback speed selector</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Importing and Exporting</h2>
+        <h3>Importing Music</h3>
+        <p>To use an existing piece as reference:</p>
+        <ol>
+            <li>Select "File" → "Open"</li>
+            <li>Choose a MIDI or audio file</li>
+            <li>The application will analyze the file and extract parameters</li>
+        </ol>
+        
+        <h3>Exporting Music</h3>
+        <p>Save your composition in various formats:</p>
+        <ul>
+            <li><strong>MIDI Export:</strong> Select "File" → "Export as MIDI" or use the button in the Playback Panel</li>
+            <li><strong>WAV Export:</strong> Select "File" → "Export as WAV" or use the button in the Playback Panel</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Keyboard Shortcuts</h2>
+        <table>
+            <tr>
+                <th>Action</th>
+                <th>Shortcut</th>
+            </tr>
+            <tr>
+                <td>New Composition</td>
+                <td><span class="keyboard-shortcut">Ctrl+N</span></td>
+            </tr>
+            <tr>
+                <td>Open File</td>
+                <td><span class="keyboard-shortcut">Ctrl+O</span></td>
+            </tr>
+            <tr>
+                <td>Save</td>
+                <td><span class="keyboard-shortcut">Ctrl+S</span></td>
+            </tr>
+            <tr>
+                <td>Save As</td>
+                <td><span class="keyboard-shortcut">Ctrl+Shift+S</span></td>
+            </tr>
+            <tr>
+                <td>Generate Composition</td>
+                <td><span class="keyboard-shortcut">Ctrl+G</span></td>
+            </tr>
+            <tr>
+                <td>Undo</td>
+                <td><span class="keyboard-shortcut">Ctrl+Z</span></td>
+            </tr>
+            <tr>
+                <td>Redo</td>
+                <td><span class="keyboard-shortcut">Ctrl+Y</span></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>Tips for Better Results</h2>
+        <ul>
+            <li><strong>Match instruments to style:</strong> Choose instruments that are typical for your selected style</li>
+            <li><strong>Experiment with complexity:</strong> Different styles work better with different complexity levels</li>
+            <li><strong>Generate multiple versions:</strong> Try generating several compositions with the same parameters to find one you like</li>
+            <li><strong>Use reference tracks:</strong> Import existing music as a starting point for your own compositions</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Troubleshooting</h2>
+        <table>
+            <tr>
+                <th>Issue</th>
+                <th>Solution</th>
+            </tr>
+            <tr>
+                <td>No sound during playback</td>
+                <td>Check volume settings and ensure your computer's audio is working properly</td>
+            </tr>
+            <tr>
+                <td>Generation takes too long</td>
+                <td>Try reducing the composition duration or complexity</td>
+            </tr>
+            <tr>
+                <td>Application crashes</td>
+                <td>Restart the application and try again with different parameters</td>
+            </tr>
+            <tr>
+                <td>Error exporting files</td>
+                <td>Make sure you have write permissions to the selected directory</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>About AI Music Composer</h2>
+        <p>AI Music Composer is designed to help musicians, composers, and enthusiasts create music with the assistance of artificial intelligence. The application uses advanced algorithms to generate compositions based on musical theory principles and style characteristics.</p>
+        <p>Version: 1.0</p>
+        <p>&copy; 2023 AI Music Labs</p>
+    </div>
+</body>
+</html>
